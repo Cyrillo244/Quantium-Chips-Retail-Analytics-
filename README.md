@@ -29,6 +29,8 @@ The dataset used for this analysis is the "data.csv" file, containing detailed i
 - Power BI
 - Microsoft PowerPoint
 
+### Technical Highlights 
+
 
 ### Data Cleaning / Preparation 
 Data preparation and transformation were performed in **Jupyter Notebook**:
@@ -39,14 +41,33 @@ Data preparation and transformation were performed in **Jupyter Notebook**:
 - Merged the transaction dataset with the purchase behaviour dataset to make the dataset complete for other analyses like RFM, etc
 
 ### Analytics and Modelling 
-First of all, the metrics baseline was set up:
-- Average sales per transaction
-- Average sold quantities per transaction
-- Average sales or transactions per month
-- Average sales or transactions per store
+1. First of all, the metrics baseline was set up:
+   - Calculated the average sales per transaction
+   - Calculated the average sold quantities per transaction
+   - Calculated the average sales or transactions per month
+   - Calculated the average sales or transactions per store
 
-Metrics deep-dive 
-- MoM sales trend
-- By store level, distribution, high vs. low performance stores
-- By product name level, popular vs. unpopular brands
+2. Metrics deep-dive 
+   - calculated the month-on-month (MoM) sales trend
+   - Calculated total sales per store and number of transactions per store to analyse the performance of all stores
+   - Calculated the total quantities per product and the total sales per product to identify popular and unpopular product  brands
 
+3. Customer analysis 
+   - calculated Repeat customers proportion and KPI performance
+   - checked customer distribution and performance by 'Lifestage' and 'Premium' level
+   - Calculated targeting strategies based on  'Lifestage' or 'Premium'
+   - performed customer segmentation based on RFM, recency, frequency, and monetary value
+
+4. A/B testing analysis (Python)
+   - selected the control groups to compare with the trial groups
+   - Determine comparable groups, based on similar metrics, eg, total sales revenue, total number of customers, and average number of transactions per customer. 
+   - used Pearson correlations and magnitude distance
+   - Assessed trial group, stores 77, 86 and 88, each store individually based on total sales
+   - Statistical testing (T-Test)
+   - Summarised findings for each store and provided a recommendation outlining the impact on sales during the trial period. 
+   - checked if the driver of sales change is more purchasing customers or more purchases per customer
+
+5. Visualisation and Reporting
+    - Power BI was used to create all the charts that were used in the PowerPoint slides 
+
+### Recommendations
