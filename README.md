@@ -135,11 +135,26 @@ Data preparation and transformation were performed in **Jupyter Notebook**:
 
 
 ### Results and Findings
-- The highest monthly sale was $156k in 12-2018 according to the MoM trend
-- The average sales across the whole period(1 year) was $150k
+- The **highest monthly sale** was **$156k in 12-2018**,  and the **average sales** across the whole period(1 year) was **$150k** according to the MoM trend
 - The highest MoM % sales was 10.89%
-- The average sales per transaction was $7.32 and the average quantity sold per transaction was 1.91 ~ 2 packs of chips 
-
+- The **average sales per transaction was $7.32**, and the **average quantity sold per transaction was 1.91 ~ 2 packs** of chips
+- There were **19,570 one-time customers** with an **average spend of $6.45** per transaction and **51,717 repeat customers** with an average spend of **$32.46**
+- **Kettle and Cobs** products are the most purchased and popular product brands among all the products
+- **Store 226** was the highest performing store, with a total sale of **$16.5K**
+- **Loyal Customers and Champions** customer segment drives the most revenue with a combined total sale of over **$930K that is 50% of the total revenue** despite a smaller customer share
+- **Hibernating and At-Risk** segments dominate volume with almost **$30K(40%) customers** but show low engagement of nearly **$400K(30%) in total sales**
+- From the **A/B testing analysis**, after the initiative, there was a **4%  sales increase in February, 25% increase in March, and 13% in April** 
 
 
 ### Recommendations
+- Prioritise Champions and Potential Loyalists with loyalty rewards and personalised offers to protect and grow high-value revenue
+- Run reactivation campaigns for At-Risk and Hibernating customers using limited-time discounts and reminder messaging
+- Deploy onboarding incentives such as second-purchase discounts for New and Promising customer segments
+- Continue using matched control stores, pre-trial validation, and statistical testing to evaluate all major pricing, promotion, and layout changes
+- Focus decision-making on measurable incremental uplift, not raw sales growth, to ensure causality and ROI 
+
+### Reference 
+- [Forage](https://www.theforage.com/virtual-experience/NkaC7knWtjSbi6aYv/quantium/data-analytics-rqkb/analytics-and-commercial-application)
+- Medium article 
+
+
