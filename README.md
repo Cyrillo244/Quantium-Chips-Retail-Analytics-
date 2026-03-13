@@ -30,6 +30,69 @@ The dataset used for this analysis is the "data.csv" file, containing detailed i
 - Microsoft PowerPoint
 
 ### Technical Highlights 
+**Setting up RFM model**
+```sql
+# RFM Segmentation (Recency, Frequency, Monetary)
+query_rfm = """
+WITH customer_rfm AS (
+    SELECT
+        LYLTY_CARD_NBR,
+        MAX(DATE) AS last_purchase,
+        COUNT(DISTINCT TXN_ID) AS frequency,
+        SUM(TOT_SALES) AS monetary
+    FROM df
+    GROUP BY LYLTY_CARD_NBR
+),
+recency_calc AS (
+    SELECT
+        LYLTY_CARD_NBR,
+        date_diff('day', last_purchase, (SELECT MAX(DATE) FROM df)) AS recency,
+        frequency,
+        monetary
+    FROM customer_rfm
+)
+SELECT
+    LYLTY_CARD_NBR,
+    recency,
+    frequency,
+    monetary
+FROM recency_calc
+ORDER BY monetary DESC
+LIMIT 20
+"""
+df_rfm = duckdb.query(query_rfm).to_df()
+df_rfm
+```
+
+**Using Pearson Correlation to find control stores for the given trial stores**
+```python
+#  Correlation function
+def calculate_correlation(df, metricCol, storeComparison):
+    rows = []
+    # months for this trial store (should be complete)
+    trial_series = df[df['STORE_NBR'] == storeComparison][['YEARMONTH', metricCol]]
+    for s in df['STORE_NBR'].unique():
+        if s == storeComparison:
+            continue
+        control_series = df[df['STORE_NBR'] == s][['YEARMONTH', metricCol]]
+        merged = pd.merge(trial_series, control_series, on='YEARMONTH', how='inner', suffixes=('_trial','_control'))
+        # require all months present
+        if len(merged) == 0:
+            continue
+        corr = np.nan
+        try:
+            corr, _ = pearsonr(merged[f"{metricCol}_trial"], merged[f"{metricCol}_control"])
+        except Exception:
+            corr = np.nan
+        rows.append({'Store1': storeComparison, 'Store2': s, 'corr_measure': corr})
+    return pd.DataFrame(rows)
+```
+
+### Data Visualisation 
+
+
+
+
 
 
 ### Data Cleaning / Preparation 
@@ -69,5 +132,14 @@ Data preparation and transformation were performed in **Jupyter Notebook**:
 
 5. Visualisation and Reporting
     - Power BI was used to create all the charts that were used in the PowerPoint slides 
+
+
+### Results and Findings
+- The highest monthly sale was $156k in 12-2018 according to the MoM trend
+- The average sales across the whole period(1 year) was $150k
+- The highest MoM % sales was 10.89%
+- The average sales per transaction was $7.32 and the average quantity sold per transaction was 1.91 ~ 2 packs of chips 
+
+
 
 ### Recommendations
