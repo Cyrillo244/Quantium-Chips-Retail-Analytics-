@@ -1,26 +1,32 @@
 # Quantium-Chips-Retail-Analytics-
 A retail data analytics project
 
-### Table of Contents
 
-
-### Project Overview 
+### 1. Project Overview 
 - This project identifies customer segments through purchase behaviour
 - Aims to analyse transaction and customer data of chip stores to identify trends and inconsistencies
 - Develop metrics and examine sales drivers to gain insights into overall sales performance
 - Create visualisations and prepare findings to formulate a clear recommendation for the client's strategy
 
-### Data Visualisation
-![Overall financial trend](MoM sales.png)
+### 2. Data Visualisation
+
+### Overall Financial Trend
+![Overall financial trend](MoM_sales.png)
+
+
+### RFM Bubble Chart
+![RFM bubble chart](rfm_bubble.png)
+
+
+
+### Trial and Control Stores Revenue Chart
+![Trial stores revenue chart](trial_control.git.png)
 
 
 
 
 
-
-
-
-### Data Sources 
+### 3. Data Sources 
 The dataset used for this analysis is the "data.csv" file, containing detailed information about:
 - date of each transaction
 - different store numbers
@@ -31,7 +37,7 @@ The dataset used for this analysis is the "data.csv" file, containing detailed i
 - sales per transaction
 - units sold per transaction
 
-### Tools
+### 4. Tools
 - Excel - Data visualisation (bubble chart)
 - Jupyter Notebook - Data exploration,  text preprocessing
 - Python Google Colab - Data analysis
@@ -39,7 +45,7 @@ The dataset used for this analysis is the "data.csv" file, containing detailed i
 - Power BI
 - Microsoft PowerPoint
 
-### Technical Highlights 
+### 5. Technical Highlights 
 **Setting up RFM model (sql)**
 ```sql
 # RFM Segmentation (Recency, Frequency, Monetary)
@@ -105,7 +111,7 @@ def calculate_correlation(df, metricCol, storeComparison):
 
 
 
-### Data Cleaning / Preparation 
+### 6. Data Cleaning / Preparation 
 Data preparation and transformation were performed in **Jupyter Notebook**:
 - preprocessed text data in the **PROD_NAME** column by removing punctuation and correcting wrongly spelt words
 - extracted **brand names** from the PROD_NAME to know the **top product brands** by  finding their value counts
@@ -113,7 +119,7 @@ Data preparation and transformation were performed in **Jupyter Notebook**:
 - Checked for missing values and duplicates and removed them
 - Merged the transaction dataset with the purchase behaviour dataset to make the dataset complete for other analyses like RFM, etc
 
-### Analytics and Modelling 
+### 7. Analytics and Modelling 
 1. First of all, the metrics baseline was set up:
    - Calculated the average sales per transaction
    - Calculated the average sold quantities per transaction
@@ -144,7 +150,7 @@ Data preparation and transformation were performed in **Jupyter Notebook**:
     - Power BI was used to create all the charts that were used in the PowerPoint slides 
 
 
-### Results and Findings
+### 8. Results and Findings
 - The **highest monthly sale** was **$156k in 12-2018**,  and the **average sales** across the whole period(1 year) was **$150k** according to the MoM trend
 - The highest MoM % sales was 10.89%
 - The **average sales per transaction was $7.32**, and the **average quantity sold per transaction was 1.91 ~ 2 packs** of chips
@@ -156,14 +162,14 @@ Data preparation and transformation were performed in **Jupyter Notebook**:
 - From the **A/B testing analysis**, after the initiative, there was a **4%  sales increase in February, 25% increase in March, and 13% in April** 
 
 
-### Recommendations
+### 9. Recommendations
 - Prioritise Champions and Potential Loyalists with loyalty rewards and personalised offers to protect and grow high-value revenue
 - Run reactivation campaigns for At-Risk and Hibernating customers using limited-time discounts and reminder messaging
 - Deploy onboarding incentives such as second-purchase discounts for New and Promising customer segments
 - Continue using matched control stores, pre-trial validation, and statistical testing to evaluate all major pricing, promotion, and layout changes
 - Focus decision-making on measurable incremental uplift, not raw sales growth, to ensure causality and ROI 
 
-### Reference 
+### 10. Reference 
 - [Forage](https://www.theforage.com/virtual-experience/NkaC7knWtjSbi6aYv/quantium/data-analytics-rqkb/analytics-and-commercial-application)
 - Medium article 
 
