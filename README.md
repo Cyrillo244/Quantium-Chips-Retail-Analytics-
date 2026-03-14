@@ -10,6 +10,16 @@ A retail data analytics project
 - Develop metrics and examine sales drivers to gain insights into overall sales performance
 - Create visualisations and prepare findings to formulate a clear recommendation for the client's strategy
 
+### Data Visualisation
+![Overall financial trend](MoM sales.png)
+
+
+
+
+
+
+
+
 ### Data Sources 
 The dataset used for this analysis is the "data.csv" file, containing detailed information about:
 - date of each transaction
@@ -30,7 +40,7 @@ The dataset used for this analysis is the "data.csv" file, containing detailed i
 - Microsoft PowerPoint
 
 ### Technical Highlights 
-**Setting up RFM model**
+**Setting up RFM model (sql)**
 ```sql
 # RFM Segmentation (Recency, Frequency, Monetary)
 query_rfm = """
@@ -64,7 +74,7 @@ df_rfm = duckdb.query(query_rfm).to_df()
 df_rfm
 ```
 
-**Using Pearson Correlation to find control stores for the given trial stores**
+**Using Pearson Correlation to find control stores for the given trial stores (python)**
 ```python
 #  Correlation function
 def calculate_correlation(df, metricCol, storeComparison):
@@ -88,7 +98,7 @@ def calculate_correlation(df, metricCol, storeComparison):
     return pd.DataFrame(rows)
 ```
 
-### Data Visualisation 
+ 
 
 
 
