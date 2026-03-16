@@ -1,5 +1,5 @@
 # Quantium-Chips-Retail-Analytics-
-A retail data analytics project
+This is  retail data analytics project that analyses transaction and customer data, examine sales drivers to gain insights into overall sales performance, analyse customer purchasing behaviour.
 
 
 ### 1. Project Overview 
