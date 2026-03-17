@@ -180,6 +180,6 @@ Data preparation and transformation were performed in **Jupyter Notebook**:
 
 ### 10. Reference 
 - [Forage](https://www.theforage.com/virtual-experience/NkaC7knWtjSbi6aYv/quantium/data-analytics-rqkb/analytics-and-commercial-application)
-- Medium article 
+- [Medium](https://medium.com/@ugursavci/customer-segmentation-using-rfm-analysis-in-python-218a3255f714) 
 
 
