@@ -16,7 +16,7 @@ This chart shows monthly sales performance alongside MoM growth to highlight tre
 
 
 ### RFM Customer Distribution
-A customer segmentation view mapping frequency and monetary value across segments to identify high-value customers, prioritize retention opportunities, and flag segments at risk of churn.
+A customer segmentation view mapping frequency and recency across segments to identify high-value customers, prioritise retention opportunities, and flag segments at risk of churn.
 ![RFM bubble chart](rfm_bubble.png)
 
 
