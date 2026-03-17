@@ -20,7 +20,7 @@ This is  retail data analytics project that analyses transaction and customer da
 
 
 ### Trial and Control Stores Revenue Distribution
-This chart shows all aggregated trial stores and control stores, and their total sales per month, starting from July 2018 to May 2019
+This chart shows all aggregated trial stores and control stores, and their total sales per month, starting from July 2018 through to May 2019
 ![Trial stores revenue chart](trial_control.git.png)
 
 
