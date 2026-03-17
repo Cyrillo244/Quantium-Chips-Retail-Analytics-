@@ -146,7 +146,7 @@ Data preparation and transformation were performed in **Jupyter Notebook**:
    - Calculated targeting strategies based on  'Lifestage' or 'Premium'
    - performed customer segmentation based on RFM, recency, frequency, and monetary value
 
-4. A/B testing analysis (Python)
+4. A/B testing analysis 
    - selected the control groups to compare with the trial groups
    - Determine comparable groups, based on similar metrics, eg, total sales revenue, total number of customers, and average number of transactions per customer. 
    - used Pearson correlations and magnitude distance
