@@ -14,12 +14,12 @@ This is  retail data analytics project that analyses transaction and customer da
 ![Overall financial trend](MoM_sales.png)
 
 
-### RFM Bubble Chart
+### RFM Customer Distribution
 ![RFM bubble chart](rfm_bubble.png)
 
 
 
-### Trial and Control Stores Revenue Chart
+### Trial and Control Stores Revenue Distribution
 ![Trial stores revenue chart](trial_control.git.png)
 
 
