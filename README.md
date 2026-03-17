@@ -12,17 +12,23 @@ This is  retail data analytics project that analyses transaction and customer da
 
 ### Overall Financial Trend
 This chart shows monthly sales performance alongside MoM growth to highlight trends, seasonality, and overall business momentum.
+
+
 ![Overall financial trend](MoM_sales.png)
 
 
 ### RFM Customer Distribution
 A customer segmentation view mapping frequency and recency across segments to identify high-value customers, prioritise retention opportunities, and flag segments at risk of churn.
+
+
 ![RFM bubble chart](rfm_bubble.png)
 
 
 
 ### Trial and Control Stores Revenue Distribution
 This line chart compares trial and control store sales to evaluate the impact of the initiative and identify measurable sales uplift.
+
+
 ![Trial stores revenue chart](trial_control.git.png)
 
 
